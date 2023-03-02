@@ -1,0 +1,19 @@
+body{
+    margin: 25px;
+    border: 5px;
+    background-color: #DB96FE;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+.alerta{
+    background-color: #50EAEF;
+}
+
+.alert{
+    background-color:hotpink;
+}
+
+h1{
+    text-align: center;
+}

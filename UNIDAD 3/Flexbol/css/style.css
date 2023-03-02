@@ -1,0 +1,16 @@
+div{
+border: 8px solid rgb(217, 250, 253);
+padding: 15px;
+display: flex;
+justify-content: center;
+justify-content: space-between;
+flex-direction: column-reverse;
+order: -1px;
+}
+
+.flex-container>div{
+ border:2px solid blueviolet;
+margin: 15px;
+padding: 20px;
+background-color:rgb(217, 250, 253) ;
+}

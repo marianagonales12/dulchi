@@ -1,0 +1,41 @@
+.carousel-item {
+    width: 300px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #9A7FEF;
+}
+
+body {
+    background-color: #F3F6AE;
+    text-align: center;
+}
+
+.container {
+    font-family: 'Amatic SC', cursive;
+  color: cadetblue;
+  
+}
+
+h4 {
+    font-family: 'Amatic SC', cursive;
+    color: #887fa5;
+}
+
+.rojo {
+    background-color: #D71731;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+.peru{
+  margin: auto ;
+  margin-top: left;
+  padding-left: 1ch;
+  padding-right: 1ch;
+  
+}

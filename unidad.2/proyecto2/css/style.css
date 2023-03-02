@@ -1,0 +1,23 @@
+body{
+    margin: 25px;
+    border: 5px;
+    background-color: #ffe0e5;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+h1{
+    text-align: center; background-color: #ffffff;font-size:35px 
+}
+
+button:hover{background-color: pink;color: white; box-shadow: 10px 10px 15px white; font-size: 20px;border-radius: 5px;}
+
+p{font-family: Courier;font-size: 20px; }
+
+
+.a{margin-top: 50px; font-size:13px }
+
+.alerta{
+    background-color: #856bcc;
+}
+
+

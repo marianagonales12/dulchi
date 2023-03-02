@@ -1,0 +1,15 @@
+body{
+    margin: 25px;
+    border: 5px;
+    background-color: #E3CCB9;
+    font-family: 'Amatic SC', cursive;
+    font-size: 19.5px;
+}
+h1{
+    text-align: center;
+}
+
+button:hover{background-color: lightblue;color: white; box-shadow: 10px 10px 15px white; font-size: 20px;border-radius: 5px;}
+
+p{font-family: Courier;}
+

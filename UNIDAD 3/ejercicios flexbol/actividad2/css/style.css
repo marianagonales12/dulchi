@@ -1,0 +1,50 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.blog{
+    background-color: #FAFCCC ;
+    padding: 100px 30px;
+}
+
+.blog h1{
+    text-align: center;
+    color:black;
+    margin-bottom: 50px;
+    font-family: 'Amatic SC' ;
+}
+
+.flex-padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-hijo{
+    margin: 5px;
+    width: 250px;
+    padding: 15px;
+}
+.info{
+    padding: 15px;
+    background-color: #ffff;
+}
+
+h2{
+    font-family: 'Amatic SC', cursive;
+    text-align: center; 
+}
+
+p{
+    font-family: 'Amatic SC', cursive;
+    color: #ADBEEC ;
+}
