@@ -73,11 +73,12 @@ $("#btn-iniciar").click(function () {
                   url("img/img4.png")
                   left top
                   no-repeat `  ,
-                  confirmButtonText: 'ok',
-                  allowOutsideClik: true //permite cerrar la alerta haciendo click fuera del 
-                }).then((result) => { 
-                    if (result.isConfirmed) {   window.location.href = 'pagina-principal.html';  }} ) 
-              })
+                confirmButtonText: 'ok',
+                allowOutsideClik: true //permite cerrar la alerta haciendo click fuera del 
+            }).then((result) => {
+                if (result.isConfirmed) { window.location.href = 'pagina-principal.html'; }
+            })
+        })
 
 
         .catch((error) => {
@@ -95,8 +96,8 @@ $("#btn-iniciar").click(function () {
                   rgba(0,0,123,0.4)
                   url("img/img3.png")
                   left top
-                  no-repeat` 
-                })
+                  no-repeat`
+            })
         });
 })
 
@@ -124,5 +125,22 @@ $("#Cerrar").click(function () {
         window.location.href = 'index.html'
 
     })
+
+})
+
+//iniciar sesion con googlee
+var provider = new firebase.auth.GoogleAuthProvider();
+$("#btn-google").click(function () {
+    firebase.auth()
+        .signInWithPopup(provider)
+        .then((result) => {
+            console.log("ingresa tu cuenta de google")
+            window.location.href = 'pagina-principal.html'
+
+        }).catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log("error al ingresar", errorCode ,errorMessage )
+        });
 
 })

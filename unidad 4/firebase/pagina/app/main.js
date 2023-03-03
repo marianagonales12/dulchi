@@ -42,7 +42,6 @@ $("#btn-registrar").click(function () {
         });
 
 })
-
 //Ingresar con nuestro correo registrado
 $("#btn-iniciar").click(function () {
 
