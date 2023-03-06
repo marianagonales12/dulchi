@@ -1,19 +1,23 @@
 // import{hola} from "./firebase.js"
 // hola();
-import { guardarTarea } from "./firebase.js";
-window.addEventListener('DOMContentLoaded', () => {
+import { guardarTarea, listarTareas } from "./firebase.js";
+window.addEventListener('DOMContentLoaded', async () => {
+    let lista = await listarTareas();
+    // console.log(lista);
+    lista.forEach((doc) => {
+        console.log(doc);
+    });
+});
 
-})
+let formulario = document.getElementById('formulario');
 
-let form = document.getElementById('formulario');
 
-form.addEventListener('submit', () => {
-    let titulo = document.getElementById('titulo').value;
-    let descrip = document.getElementById('descripcion').value;
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let titulo = formulario['titulo'].value;
+    let descripcion = formulario['descripcion'].value;
 
-    // console.log(titulo,descripcion);
-    
-    // alert(titulo,descrip);
-
-    guardarTarea(titulo,descrip);
+    // console.log(titulo, descripcion);
+    guardarTarea(titulo, descripcion);
+    formulario.reset();
 })
