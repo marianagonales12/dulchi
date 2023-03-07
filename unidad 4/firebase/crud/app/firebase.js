@@ -10,7 +10,8 @@ import {
   getFirestore, // conexion a bases de datos
   collection, // SE CREA LA BASE DE DATOS
   addDoc, // anadir bases
-  getDocs //
+  getDocs, //
+  onSnapshot, //
 
 } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js"
 // TODO: Add SDKs for Firebase products that you want to use
@@ -34,11 +35,13 @@ const analytics = getAnalytics(app);
 //iniciar getFirestore
 const db = getFirestore(app);
 //inicar la base de datos
-export const guardarTarea = (titulo, _descripcion) => {  //GUARDA LOS DATOS
+export const guardarTarea = (titulo, descripcion) => {  //GUARDA LOS DATOS
   addDoc(collection(db, "tareas"), {  //CREA UNO NUEVO CUANDO CAMBIAS EL NOMBRE
     _title: titulo,
-    _descripcion: _descripcion,
+    _descripcion: descripcion,
   });
   console.log("se agrego existosamente a la base de datos")
 }
 export const listarTareas = () => getDocs(collection(db, "tareas"));
+
+export const onListarTareas = (callback) => onSnapshot(collection(db, "tareas"), callback)
