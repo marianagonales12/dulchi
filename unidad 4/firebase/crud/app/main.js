@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             //  let tarea = doc.data()._descripcion
             html += `
             <div>
-            <h3 class"text-primary mt-3"> ${tareas._title} </h3>
+            <h3 class="text-primary mt-3"> ${tareas._title} </h3>
             <p> ${tareas._descripcion} <p>
     
          
