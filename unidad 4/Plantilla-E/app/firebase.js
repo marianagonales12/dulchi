@@ -4,7 +4,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebas
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { getAuth } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
 //import { getFirestore } from "https://www.gstatic.com/firebasejs/9.10.1/firebase-firestore.js"
-import { } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"
+import {  getFirestore, collection, addDoc, getDocs, onSnapshot, deleteDoc, doc, getDoc, updateDoc} from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"
+
 //====================================================
 //REEMPLAZAR POR TUS PROPIAR CREDENCIALES DE FIREBASE
 //====================================================
@@ -25,22 +26,22 @@ export const auth = getAuth(app);
 //export const db = getFirestore(app);
 
 //INICIAR CRUD 
-const db = getFirestore(app);
+export const db = getFirestore(app);
 //FUNCION PARA GUARDAR DATOS 
-const saveTask =(title,descripcion,userMail)=>{
+export const saveTask =(title,descripcion,userMail)=>{
 addDoc(collection(db, "task"));
 };
 //FUNCION PARA TRAER VARIOS DATOS
-const getTasks = () => getDocs(collection(db, "task")) 
+export const getTasks = () => getDocs(collection(db, "task")) 
 
 //FUNCION QUE TRAE DATOS EN TIEMPO REAL
-const OngetTask = (callback) => onSnapshot(collection(db,"task")(callback) ) ;
+export const OngetTask = (callback) => onSnapshot(collection(db,"task"),(callback) ) ;
 
 //FUNCION PARA ELIMINAR 
-const deleteTask = (id) => deleteTask(doc(db, "task", id));
+export const deleteTask = (id) => deleteTask(doc(db, "task", id));
 
 //FUNCION PARA TRAER UN SOLO SATO
-const getTask=  (id) => getDocs(doc(db, "task", id));
+export const getTask=  (id) => getDocs(doc(db, "task", id));
 
 //FUNCION PARA ACTUALIZAR
-const updateTask = (id , newFields) => updateDoc (doc(db , "task" , id ), newFields);
+export const updateTask = (id , newFields) => updateDoc (doc(db , "task" , id ), newFields);
