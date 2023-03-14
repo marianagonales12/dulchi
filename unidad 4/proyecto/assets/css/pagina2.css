@@ -1,0 +1,87 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 1000px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+    margin: 20px auto;
+
+    display: flex;
+    padding: 20px;
+}
+
+form{
+   width: 480px;
+   border: 1px solid blue;
+   padding: 15px;
+}
+
+form input{
+    width: 350px;
+    height: 35px;
+    display: block;
+    margin: 10px auto;   
+}
+
+form textarea{
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+h2,h3{
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.cajaTareas{
+    width: 480px;
+    border: 1px solid red;
+    height: fit-content;
+    margin-left: 40px;
+}
+
+#btnAccion{
+    height: 40px;
+    width: 150px;
+    background: rgb(12, 178, 181);
+    color: #fff;
+    display: block;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+}
+
+.cajaTarea{
+    width: 350px;
+    border: 1px solid black;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.editar{
+    width: 120px;
+    height: 35px;
+    background: rgb(190, 190, 47);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.eliminar{
+    width: 120px;
+    height: 35px;
+    background: rgb(156, 18, 18);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
