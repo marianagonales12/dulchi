@@ -1,6 +1,6 @@
 
 import {GoogleAuthProvider,signInWithPopup} from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js';
-import {auth}  from '../database/firebase1.js';
+import {auth}  from '../database/firebase.js';
 
 
 const btnLoginGoogle = document.querySelector(".loginGoogle");
@@ -12,7 +12,7 @@ btnLoginGoogle.onclick = async function(){
     
     try {
         await signInWithPopup(auth,provider);       
-        location.href = "pagina principal.html";
+        location.href = "pagina2.html";
     } catch (error) {
         console.log("Algo salio mal",error);
     }

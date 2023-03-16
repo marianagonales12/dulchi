@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/paisaje.css">
+    <title>Imagen</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <form id="formTareas">
+             <h2>SUBE CONTENIDO</h2>
+             <input type="text"  id="titulo" placeholder="Ingrese titulo">
+             <textarea  id="descripcion" ></textarea>
+
+
+             <div class="cajaImagen">
+                <input type="text" name="" id="nombrePaisaje">
+                <textarea id="descripcionPaisaje"></textarea>
+                <input type="file" name="" id="inputImagen" class="form-control" accept="image/*" >
+                <div class="cajaPreviewImagen">
+                       
+                </div>   
+            </div>
+            <button id="btnSubirCuadro">Sube tu cuadro</button>
+            
+             <button id="btnAccion">SUBIR</button>
+        </form>
+    
+    <div class="cajaTareas">
+        <h3>PUBLICACION</h3>
+        <div id="cajaTasks">
+      </div>
+    </div>
+</div>
+
+
+
+<button id="btnCerrarSesion">Cerrar Sesion</button>
+
+    <script src="control.js" type="module"></script>
+</body>
+
+</html>

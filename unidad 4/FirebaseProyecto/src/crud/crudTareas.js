@@ -166,3 +166,8 @@ function limpiarHtml(elemento){
         elemento.removeChild(elemento.firstChild);
     }
 }
+
+
+
+         
+

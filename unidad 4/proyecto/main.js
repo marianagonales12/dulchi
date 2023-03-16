@@ -1,7 +1,5 @@
-
-
 import './src/assets/js/slider.js';
-import './src/controllers/registro.js';
+import './src/controls/registro.js';
 
 
 import './src/login/login.js';
